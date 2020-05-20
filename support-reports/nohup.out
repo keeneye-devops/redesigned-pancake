@@ -1,0 +1,332 @@
+Creating network "supportreports_default" with the default driver
+Creating supportreports_erp-grafana_1 ... 
+[1A[2KCreating supportreports_erp-grafana_1 ... [32mdone[0m[1BAttaching to supportreports_erp-grafana_1
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Starting Grafana" logger=server version=6.4.3 commit=3a2bfb7 branch=HEAD compiled=2019-10-16T09:32:09+0000
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="App mode production" logger=settings
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing SqlStore" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Starting DB migration" logger=migrator
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing HTTPServer" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing RemoteCache" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing QuotaService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing ServerLockService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing PluginManager" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Starting plugin search" logger=plugins
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing RenderingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing AlertEngine" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing HooksService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing LoginService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing SearchService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing TracingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing CleanUpService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing NotificationService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Initializing Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T18:39:45+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T18:40:04+0000 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/tsdb/query status=400 remote_addr=13.67.35.251 time_ms=19 size=213 referer=http://support.ikmanit.com:3000/datasources/edit/1/
+[36merp-grafana_1  |[0m t=2019-10-25T18:47:31+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/d/ByPTSGAZk/admin-ext-sum-report status=302 remote_addr=13.67.35.251 time_ms=0 size=29 referer=
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped TracingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:01:33+0000 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+[36msupportreports_erp-grafana_1 exited with code 0
+[0mCreating network "supportreports_default" with the default driver
+Creating supportreports_erp-grafana_1 ... 
+[1A[2KCreating supportreports_erp-grafana_1 ... [32mdone[0m[1BAttaching to supportreports_erp-grafana_1
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Starting Grafana" logger=server version=6.4.3 commit=3a2bfb7 branch=HEAD compiled=2019-10-16T09:32:09+0000
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="App mode production" logger=settings
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing SqlStore" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Starting DB migration" logger=migrator
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing HTTPServer" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing RemoteCache" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing QuotaService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing ServerLockService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing PluginManager" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Starting plugin search" logger=plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing RenderingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing AlertEngine" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing HooksService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing LoginService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing SearchService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing TracingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing CleanUpService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing NotificationService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="Initializing Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:02:44+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+[36merp-grafana_1  |[0m t=2019-10-25T19:03:11+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=13.67.35.251 time_ms=0 size=29 referer=
+[36merp-grafana_1  |[0m t=2019-10-25T19:03:21+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=440 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped TracingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:03+0000 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+[36msupportreports_erp-grafana_1 exited with code 0
+[0mCreating network "supportreports_default" with the default driver
+Creating supportreports_erp-grafana_1 ... 
+[1A[2KCreating supportreports_erp-grafana_1 ... [32mdone[0m[1BAttaching to supportreports_erp-grafana_1
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Starting Grafana" logger=server version=6.4.3 commit=3a2bfb7 branch=HEAD compiled=2019-10-16T09:32:09+0000
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="App mode production" logger=settings
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing SqlStore" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Starting DB migration" logger=migrator
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing HTTPServer" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing RemoteCache" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing QuotaService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing ServerLockService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing PluginManager" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Starting plugin search" logger=plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing RenderingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing AlertEngine" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing HooksService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing LoginService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing SearchService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing TracingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing CleanUpService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing NotificationService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="Initializing Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:09+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:27+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=13.67.35.251 time_ms=0 size=29 referer=
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:29+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=450 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:30+0000 lvl=info msg="state check" logger=oauth queryState=817437ff5cfa458786e4e65a20d64c27938aacee5ca5faab4c0ce4a7b90880c4 cookieState=817437ff5cfa458786e4e65a20d64c27938aacee5ca5faab4c0ce4a7b90880c4
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:30+0000 lvl=info msg="Successful Login" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:09:30+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=213 size=24 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:19+0000 lvl=info msg="Successful Logout" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:19+0000 lvl=info msg="Request Completed" logger=context userId=2 orgId=1 uname=sudheera.dulan@ikman.lk method=GET path=/logout status=302 remote_addr=13.67.35.251 time_ms=82 size=29 referer="http://support.ikmanit.com:3000/d/ByPTSGAZk/admin-extension-summary?orgId=1"
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:22+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=450 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:23+0000 lvl=info msg="state check" logger=oauth queryState=f168f20fd574d19acbf3d656ae5505a2a3d7c4de9ac3bcea157da4d5e9958426 cookieState=f168f20fd574d19acbf3d656ae5505a2a3d7c4de9ac3bcea157da4d5e9958426
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:23+0000 lvl=info msg="Successful Login" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:25:23+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=193 size=24 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped TracingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:01+0000 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+[36msupportreports_erp-grafana_1 exited with code 0
+[0mCreating network "supportreports_default" with the default driver
+Creating supportreports_erp-grafana_1 ... 
+[1A[2KCreating supportreports_erp-grafana_1 ... [32mdone[0m[1BAttaching to supportreports_erp-grafana_1
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Starting Grafana" logger=server version=6.4.3 commit=3a2bfb7 branch=HEAD compiled=2019-10-16T09:32:09+0000
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="App mode production" logger=settings
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing SqlStore" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Starting DB migration" logger=migrator
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing HTTPServer" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing RemoteCache" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing QuotaService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing ServerLockService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing PluginManager" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Starting plugin search" logger=plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing RenderingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing AlertEngine" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing HooksService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing LoginService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing SearchService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing TracingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing CleanUpService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing NotificationService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Initializing Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:08+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:27+0000 lvl=info msg="Successful Logout" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:27:27+0000 lvl=info msg="Request Completed" logger=context userId=2 orgId=1 uname=sudheera.dulan@ikman.lk method=GET path=/logout status=302 remote_addr=13.67.35.251 time_ms=717 size=29 referer=http://support.ikmanit.com:3000/profile
+[36merp-grafana_1  |[0m t=2019-10-25T19:28:13+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=450 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:28:14+0000 lvl=info msg="state check" logger=oauth queryState=6d0b4a548a899439f17fd263ec039c10e0d5c426764a66d2ea2e2a021ab0e49c cookieState=6d0b4a548a899439f17fd263ec039c10e0d5c426764a66d2ea2e2a021ab0e49c
+[36merp-grafana_1  |[0m t=2019-10-25T19:28:14+0000 lvl=info msg="Successful Login" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:28:14+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=292 size=24 referer=http://support.ikmanit.com:3000/login
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped UsageStatsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped UserAuthTokenService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped NotificationService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped CleanUpService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped TracingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped RenderingService" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped RemoteCache" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped InternalMetricsService" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped provisioningServiceImpl" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped AlertEngine" logger=server reason="context canceled"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=info msg="Stopped HTTPServer" logger=server reason=nil
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:17+0000 lvl=eror msg="Server shutdown" logger=server reason="System signal: terminated"
+[36msupportreports_erp-grafana_1 exited with code 0
+[0mCreating network "supportreports_default" with the default driver
+Creating supportreports_erp-grafana_1 ... 
+[1A[2KCreating supportreports_erp-grafana_1 ... [32mdone[0m[1BAttaching to supportreports_erp-grafana_1
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Starting Grafana" logger=server version=6.4.3 commit=3a2bfb7 branch=HEAD compiled=2019-10-16T09:32:09+0000
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="App mode production" logger=settings
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing SqlStore" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Starting DB migration" logger=migrator
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing HTTPServer" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing InternalMetricsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing RemoteCache" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing QuotaService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing ServerLockService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing UserAuthTokenService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing PluginManager" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Starting plugin search" logger=plugins
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing RenderingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing AlertEngine" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing DatasourceCacheService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing HooksService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing LoginService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing SearchService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing TracingService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing UsageStatsService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing CleanUpService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing NotificationService" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Initializing Stream Manager"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:29+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to grafana-image-renderer plugin." logger=rendering
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:45+0000 lvl=info msg="Successful Logout" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:45+0000 lvl=info msg="Request Completed" logger=context userId=2 orgId=1 uname=sudheera.dulan@ikman.lk method=GET path=/logout status=302 remote_addr=13.67.35.251 time_ms=19 size=29 referer="http://support.ikmanit.com:3000/?orgId=1"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:46+0000 lvl=info msg="OAuth auto login enabled. Redirecting to /login/google"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:46+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=307 remote_addr=13.67.35.251 time_ms=1 size=49 referer="http://support.ikmanit.com:3000/?orgId=1"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:46+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=450 referer="http://support.ikmanit.com:3000/?orgId=1"
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:46+0000 lvl=info msg="state check" logger=oauth queryState=499d8261838a100743de35cfbe3e398e3a8d26f95f228afc97a96ca598bddd2f cookieState=499d8261838a100743de35cfbe3e398e3a8d26f95f228afc97a96ca598bddd2f
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:47+0000 lvl=info msg="Successful Login" logger=http.server User=sudheera.dulan@ikman.lk
+[36merp-grafana_1  |[0m t=2019-10-25T19:31:47+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=234 size=24 referer="http://support.ikmanit.com:3000/?orgId=1"
+[36merp-grafana_1  |[0m t=2019-10-25T19:32:40+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=13.67.35.251 time_ms=0 size=29 referer=
+[36merp-grafana_1  |[0m t=2019-10-25T19:32:40+0000 lvl=info msg="OAuth auto login enabled. Redirecting to /login/google"
+[36merp-grafana_1  |[0m t=2019-10-25T19:32:40+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=307 remote_addr=13.67.35.251 time_ms=1 size=49 referer=
+[36merp-grafana_1  |[0m t=2019-10-25T19:32:40+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login/google status=302 remote_addr=13.67.35.251 time_ms=0 size=450 referer=

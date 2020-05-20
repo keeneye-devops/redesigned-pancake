@@ -33,3 +33,13 @@ services:
       - 8181:80
     environment:
       PMA_HOST: support-core-db
+
+  reports:
+    image: grafana/grafana:6.4.3
+    environment:
+      SYSTEM: SUPPORT.REPORTS
+    volumes:
+      - ./support-reports/grafana-storage:/var/lib/grafana
+      - ./support-reports/custom.ini:/etc/grafana/grafana.ini
+    ports:
+      - 3000:3000

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  erp-grafana:
+    image: grafana/grafana:6.4.3
+    environment:
+      SYSTEM: SUPPORT.AS.REPORTS
+    volumes:
+      - ./grafana-storage:/var/lib/grafana
+      - ./custom.ini:/etc/grafana/grafana.ini
+    ports:
+      - 3000:3000
+
+#volumes:
+  #  grafana-storage:
