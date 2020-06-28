@@ -5,6 +5,3 @@ db/data/*
 core/site/wp-content/debug.log
 nohup.out
 */nohup.out
-
-#ignore micro apps
-support-reports/*
