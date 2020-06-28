@@ -17,8 +17,11 @@
  *
  * @package WordPress
  */
-define('WP_HOME','http://localhost:8080');
-define('WP_SITEURL','http://localhost:8080');
+#define('WP_HOME','http://178.128.223.250:8080');
+#define('WP_SITEURL','http://support-ops.beyond.lk');
+#define('WP_HOME','http://support-ops.beyond.lk');
+#define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
+#define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'support_db');
@@ -65,6 +68,10 @@ define('NONCE_SALT',       ')r`$mC%V0]u@ H4<1U0~pf~]!;H%zw*,zJC5;W]O+@C}.Vh3Uxy)
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'ea_';
+#define('WP_HOME','http://178.128.223.250:8080');
+#define('WP_SITEURL','http://178.128.223.250:8080');
+define('WP_HOME','http://support-ops.beyond.lk');
+define('WP_SITEURL','https://support-ops.beyond.lk');
 
 /**
  * For developers: WordPress debugging mode.
@@ -92,9 +99,9 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
-define('FS_METHOD', 'direct');
-define('FTP_BASE', '/var/www/support/erp_access_req');
-define('FTP_USER', 'wikiUser');
-define('FTP_PASS', 'wikipass@2020');
-define('FTP_HOST', 'localhost');
-define('FTP_SSL', true);
+#define('FS_METHOD', 'direct');
+#define('FTP_BASE', '/var/www/support/erp_access_req');
+#define('FTP_USER', 'wikiUser');
+#define('FTP_PASS', 'wikipass@2020');
+#define('FTP_HOST', 'support-ops.beyond.lk');
+#define('FTP_SSL', true);

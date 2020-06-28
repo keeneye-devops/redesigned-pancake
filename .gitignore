@@ -3,3 +3,6 @@ db/data/*
 
 #ignore logs
 core/site/wp-content/debug.log
+nohup.out
+*/nohup.out
+
